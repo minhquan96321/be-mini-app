@@ -1,0 +1,20 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "be-mini-app"
+main = "src/index.js"
+compatibility_date = "2024-06-03"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "GoApp-d1"
+database_id = "f5c0bdaf-87b6-4bbe-8aa7-5ee2186b6d74"
+
+
+[vars]
+JWT_SECRET = "176c83bd5c13eaa0a99441a951d50ab1b87a9046a2757a9a1924754b8b86a259"
+
+# lark
+APP_ID = "cli_a6e0de506d799010"
+APP_SECRET = "F1lEGvbalyZJdnNyrZu4dsdlZTNY6Gls"
+TABLE_ID = "tblRQ0pSt4Y9Ma8W"
+BASE_ID = "Sfh0bW2jValLcysfxMslHoR6gWh"
