@@ -1,9 +1,13 @@
-import { Hono } from 'hono'
-import BookCar from '../controller/bookcar'
+import { Hono } from 'hono';
+import BookCar from '../controller/bookcar';
 
-const routerBookcar = new Hono()
+const routerBookcar = new Hono();
 
-routerBookcar.post("/create-bookcar", BookCar.createBookCar)
-routerBookcar.get("/get-bookcar", BookCar.getBookCar)
+routerBookcar.post('/create-bookcar', BookCar.createBookCar);
 
-export default routerBookcar
+// routerBookcar.delete("/cancel-bookcar", BookCar.cancelBookcar)
+
+routerBookcar.get('/get-bookcar/:id', BookCar.getBookCar);
+routerBookcar.get('/detail-bookcar/:IDbookcar', BookCar.detailBookcar);
+
+export default routerBookcar;

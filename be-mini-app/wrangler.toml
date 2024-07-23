@@ -18,3 +18,14 @@ APP_ID = "cli_a6e0de506d799010"
 APP_SECRET = "F1lEGvbalyZJdnNyrZu4dsdlZTNY6Gls"
 TABLE_ID = "tblRQ0pSt4Y9Ma8W"
 BASE_ID = "Sfh0bW2jValLcysfxMslHoR6gWh"
+
+# token
+SECRET_KEY = "rUUl3y4Ua271UMi7UYMI"
+APPID = "1901115223048673987"
+REFRESH_TOKEN = "refresh_token"
+
+# JWT
+SECRET_JWT = "bookingapp"
+ADMIN = "minhquancao0@gmail.com"
+PHONE_ADMIN = "84934433864"
+    

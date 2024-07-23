@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS "admin";
-
 CREATE TABLE IF NOT EXISTS "admin" (
-    "admin" INTEGER PRIMARY KEY AUTOINCREMENT,
-    "nameAdmin" TEXT UNIQUE,
-    "address" TEXT UNIQUE,
-    "phonenumber" TEXT UNIQUE,
-    " positions" TEXT UNIQUE
+    "idAdmin" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "email" TEXT(60) UNIQUE,
+    "password" TEXT ,
+    "nameAdmin" TEXT(50),
+    "dateofbirth" TEXT(30),
+    "electronicwallet" INTEGER DEFAULT 0
 );

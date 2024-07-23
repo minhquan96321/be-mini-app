@@ -1,14 +1,22 @@
-import { Hono } from 'hono'
-import routerBookcar from './bookcar'
-import routerOrder from './ordertracking'
-import routerUser from './user'
-import routerRole from './role'
+import { Hono } from 'hono';
+import routerBookcar from './bookcar';
 
-const routerIndex = new Hono()
+import routerRestaurants from './restaurant';
+import routerUser from './user';
+import routerDriver from './driver';
+import routerManage from './admin/manage';
+import routerAdmin from './admin/account';
+import routerRestaurant from './admin/restaurant';
 
-routerIndex.route("/user", routerUser)
-routerIndex.route("/ordertracking", routerOrder)
-routerIndex.route("/bookcar", routerBookcar)
-routerIndex.route("/role", routerRole)
+const routerIndex = new Hono();
 
-export default routerIndex
+routerIndex.route('/user', routerUser);
+routerIndex.route('/bookcar', routerBookcar);
+routerIndex.route('/driver', routerDriver);
+routerIndex.route('/restaurant', routerRestaurants);
+// manager
+routerIndex.route('/manage', routerManage);
+routerIndex.route('/manage-account', routerAdmin);
+routerIndex.route('/manage-restaurant', routerRestaurant);
+
+export default routerIndex;
